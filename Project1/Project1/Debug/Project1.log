@@ -1,0 +1,392 @@
+﻿  applicationclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(45,27): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(46,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(47,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,11): error C3646: 'm_projectionMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,29): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,11): error C3646: 'm_worldMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,11): error C3646: 'm_orthoMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,14): error C3646: 'GetPosition': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,14): error C3646: 'GetRotation': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(31,21): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,13): error C3646: 'm_viewMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,12): error C3646: 'position': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,20): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,12): error C3646: 'color': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,17): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(38,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(45,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,15): error C3646: 'pixelColor': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(43,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(50,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\textureclass.h(12,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'd3dX11tex.h': No such file or directory
+  cameraclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,14): error C3646: 'GetPosition': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,14): error C3646: 'GetRotation': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(31,21): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,13): error C3646: 'm_viewMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(47,26): error C2039: 'GetPosition': 'CameraClass'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(17): message : 'CameraClass' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(47,37): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(47,37): error C2146: 구문 오류: ';'이(가) 'GetPosition' 식별자 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(48,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(48,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(53,26): error C2039: 'GetRotation': 'CameraClass'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(17): message : 'CameraClass' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(53,37): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(53,1): error C2086: 'int D3DXVECTOR3': 재정의
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(47): message : 'D3DXVECTOR3' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(53,37): error C2146: 구문 오류: ';'이(가) 'GetRotation' 식별자 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(54,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(54,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(61,14): error C2146: 구문 오류: ';'이(가) 'up' 식별자 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(61,14): error C2065: 'up': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(61,18): error C2065: 'position': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(61,28): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(63,2): error C2065: 'D3DXMATRIX': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(63,13): error C2146: 구문 오류: ';'이(가) 'rotationMatrix' 식별자 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(63,13): error C2065: 'rotationMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(67,2): error C2065: 'up': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(68,2): error C2065: 'up': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(69,2): error C2065: 'up': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(72,2): error C2065: 'position': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(73,2): error C2065: 'position': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(74,2): error C2065: 'position': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(77,2): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(78,2): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(79,2): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(87,34): error C2065: 'rotationMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(87,2): error C3861: 'D3DXMatrixRotationYawPitchRoll': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(90,26): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(90,35): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(90,44): error C2065: 'rotationMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(90,2): error C3861: 'D3DXVec3TransformCoord': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(91,26): error C2065: 'up': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(91,31): error C2065: 'up': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(91,36): error C2065: 'rotationMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(91,2): error C3861: 'D3DXVec3TransformCoord': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(94,2): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(94,11): error C2065: 'position': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(94,22): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(97,22): error C2065: 'm_viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(97,37): error C2065: 'position': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(97,48): error C2065: 'lookAt': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(97,57): error C2065: 'up': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(97,2): error C3861: 'D3DXMatrixLookAtLH': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(103,43): error C2761: 'void CameraClass::GetViewMatrix(void)': 멤버를 재선언할 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(103,33): error C2065: 'D3DXMATRIX': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(103,45): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(104,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.cpp(104,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+  colorshaderclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(38,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(45,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(32,86): error C2664: 'bool ColorShaderClass::InitializeShader(ID3D11Device *,HWND,WCHAR *,WCHAR *)': 인수 3을(를) 'const wchar_t [19]'에서 'WCHAR *'(으)로 변환할 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(32,42): message : 문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(41,7): message : 'ColorShaderClass::InitializeShader' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(51,83): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(58,46): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(58,59): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(58,71): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(88,11): error C3861: 'D3DX11CompileFromFile': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(107,11): error C3861: 'D3DX11CompileFromFile': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(264,80): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(274,23): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(274,37): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(274,2): error C3861: 'D3DXMatrixTranspose': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(275,23): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(275,36): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(275,2): error C3861: 'D3DXMatrixTranspose': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(276,23): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(276,42): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(276,2): error C3861: 'D3DXMatrixTranspose': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(289,11): error C2039: 'world': 'ColorShaderClass::MatrixBufferType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(24): message : 'ColorShaderClass::MatrixBufferType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(289,19): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(290,11): error C2039: 'view': 'ColorShaderClass::MatrixBufferType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(24): message : 'ColorShaderClass::MatrixBufferType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(290,18): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(291,11): error C2039: 'projection': 'ColorShaderClass::MatrixBufferType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(24): message : 'ColorShaderClass::MatrixBufferType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.cpp(291,24): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+  cpuclass.cpp
+  d3dclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(45,27): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(46,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(47,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,11): error C3646: 'm_projectionMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,29): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,11): error C3646: 'm_worldMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,11): error C3646: 'm_orthoMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(342,23): error C2065: 'D3DX_PI': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(346,30): error C2065: 'm_projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(346,2): error C3861: 'D3DXMatrixPerspectiveFovLH': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(349,25): error C2065: 'm_worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(349,5): error C3861: 'D3DXMatrixIdentity': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(352,21): error C2065: 'm_orthoMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(352,2): error C3861: 'D3DXMatrixOrthoLH': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(544,46): error C2761: 'void D3DClass::GetProjectionMatrix(void)': 멤버를 재선언할 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(544,36): error C2065: 'D3DXMATRIX': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(544,48): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(545,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(545,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(551,41): error C2761: 'void D3DClass::GetWorldMatrix(void)': 멤버를 재선언할 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(551,31): error C2065: 'D3DXMATRIX': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(551,43): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(552,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(552,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(558,41): error C2761: 'void D3DClass::GetOrthoMatrix(void)': 멤버를 재선언할 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(558,31): error C2065: 'D3DXMATRIX': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(558,43): error C2065: 'orthoMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(559,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.cpp(559,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+  fontclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\textureclass.h(12,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'd3dX11tex.h': No such file or directory
+  fontshaderclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,15): error C3646: 'pixelColor': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(43,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(50,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(34,84): error C2664: 'bool FontShaderClass::InitializeShader(ID3D11Device *,HWND,WCHAR *,WCHAR *)': 인수 3을(를) 'const wchar_t [18]'에서 'WCHAR *'(으)로 변환할 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(34,42): message : 문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(46,7): message : 'FontShaderClass::InitializeShader' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(53,82): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(60,46): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(60,59): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(60,71): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(60,89): error C2065: 'texture': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(60,98): error C2065: 'pixelColor': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(92,11): error C3861: 'D3DX11CompileFromFile': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(111,11): error C3861: 'D3DX11CompileFromFile': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(321,79): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(342,23): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(342,37): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(342,2): error C3861: 'D3DXMatrixTranspose': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(343,23): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(343,36): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(343,2): error C3861: 'D3DXMatrixTranspose': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(344,23): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(344,42): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(344,2): error C3861: 'D3DXMatrixTranspose': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(347,11): error C2039: 'world': 'FontShaderClass::ConstantBufferType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(24): message : 'FontShaderClass::ConstantBufferType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(347,19): error C2065: 'worldMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(348,11): error C2039: 'view': 'FontShaderClass::ConstantBufferType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(24): message : 'FontShaderClass::ConstantBufferType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(348,18): error C2065: 'viewMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(349,11): error C2039: 'projection': 'FontShaderClass::ConstantBufferType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(24): message : 'FontShaderClass::ConstantBufferType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(349,24): error C2065: 'projectionMatrix': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(361,45): error C2065: 'texture': 선언되지 않은 식별자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(374,12): error C2039: 'pixelColor': 'FontShaderClass::PixelBufferType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(31): message : 'FontShaderClass::PixelBufferType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.cpp(374,25): error C2065: 'pixelColor': 선언되지 않은 식별자입니다.
+  fpsclass.cpp
+  inputclass.cpp
+  main.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(45,27): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(46,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(47,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,11): error C3646: 'm_projectionMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,29): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,11): error C3646: 'm_worldMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,11): error C3646: 'm_orthoMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,14): error C3646: 'GetPosition': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,14): error C3646: 'GetRotation': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(31,21): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,13): error C3646: 'm_viewMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,12): error C3646: 'position': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,20): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,12): error C3646: 'color': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,17): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(38,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(45,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,15): error C3646: 'pixelColor': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(43,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(50,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\textureclass.h(12,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'd3dX11tex.h': No such file or directory
+  positionclass.cpp
+  systemclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(45,27): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(46,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(47,22): error C2061: 구문 오류: 식별자 'XMMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,11): error C3646: 'm_projectionMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(69,29): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,11): error C3646: 'm_worldMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(70,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,11): error C3646: 'm_orthoMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\d3dclass.h(71,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,14): error C3646: 'GetPosition': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(27,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,14): error C3646: 'GetRotation': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,25): error C2059: 구문 오류: '('
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(28,27): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(31,21): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,13): error C3646: 'm_viewMatrix': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\cameraclass.h(36,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,12): error C3646: 'position': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,20): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,12): error C3646: 'color': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,17): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(38,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\colorshaderclass.h(45,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,14): error C3646: 'world': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(26,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,14): error C3646: 'view': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(27,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,14): error C3646: 'projection': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(28,24): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,15): error C3646: 'pixelColor': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(33,25): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(43,41): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\fontshaderclass.h(50,49): error C2061: 구문 오류: 식별자 'D3DXMATRIX'
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\textureclass.h(12,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'd3dX11tex.h': No such file or directory
+  terrainclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,12): error C3646: 'position': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(25,20): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,12): error C3646: 'color': 알 수 없는 재정의 지정자입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(26,17): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(251,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(251,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(252,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(252,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(257,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(257,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(258,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(258,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(263,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(263,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(264,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(264,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(269,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(269,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(270,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(270,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(275,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(275,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(276,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(276,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(281,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(281,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(282,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(282,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(287,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(287,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(288,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(288,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(293,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(293,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(294,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(294,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(299,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(299,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(300,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(300,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(305,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(305,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(306,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(306,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(311,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(311,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(312,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(312,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(317,20): error C2039: 'position': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(317,31): error C3861: 'D3DXVECTOR3': 식별자를 찾을 수 없습니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(318,20): error C2039: 'color': 'TerrainClass::VertexType'의 멤버가 아닙니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.h(23): message : 'TerrainClass::VertexType' 선언을 참조하십시오.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\terrainclass.cpp(318,28): error C3861: 'D3DXVECTOR4': 식별자를 찾을 수 없습니다.
+  textclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\textureclass.h(12,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'd3dX11tex.h': No such file or directory
+  textureclass.cpp
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Project1\Project1\textureclass.h(12,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'd3dX11tex.h': No such file or directory
+  timerclass.cpp
+  코드를 생성하고 있습니다...
