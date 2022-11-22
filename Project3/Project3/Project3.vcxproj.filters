@@ -71,70 +71,70 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\applicationclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\cameraclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\colorshaderclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\d3dclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\fontclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\fontshaderclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\fpsclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\inputclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\positionclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\shadermanagerclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\systemclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\terrainclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\textclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\textureclass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\timerclass.h">
-      <Filter>소스 파일</Filter>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\zoneclass.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\userinterfaceclass.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\zoneclass.h">
-      <Filter>소스 파일</Filter>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\timerclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\textureclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\textclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\terrainclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\systemclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\shadermanagerclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\positionclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\inputclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\fpsclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\fontshaderclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\fontclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\d3dclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\colorshaderclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\cameraclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dx11ter01_src\dx11ter01_src\source\applicationclass.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\dx11ter01_src\dx11ter01_src\source\color.ps">
-      <Filter>소스 파일</Filter>
-    </None>
-    <None Include="..\..\dx11ter01_src\dx11ter01_src\source\color.vs">
-      <Filter>소스 파일</Filter>
+    <None Include="..\..\dx11ter01_src\dx11ter01_src\source\font.vs">
+      <Filter>리소스 파일</Filter>
     </None>
     <None Include="..\..\dx11ter01_src\dx11ter01_src\source\font.ps">
-      <Filter>소스 파일</Filter>
+      <Filter>리소스 파일</Filter>
     </None>
-    <None Include="..\..\dx11ter01_src\dx11ter01_src\source\font.vs">
-      <Filter>소스 파일</Filter>
+    <None Include="..\..\dx11ter01_src\dx11ter01_src\source\color.vs">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\dx11ter01_src\dx11ter01_src\source\color.ps">
+      <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
 </Project>
