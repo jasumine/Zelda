@@ -22,7 +22,7 @@
 ///////////////////////
 #include "inputclass.h"
 #include "graphicsclass.h"
-
+#include "PositionClass.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Class name: SystemClass
@@ -50,8 +50,9 @@ private:
 	HINSTANCE m_hinstance;
 	HWND m_hwnd;
 
-	InputClass* m_Input;
-	GraphicsClass* m_Graphics;
+	InputClass* m_Input = nullptr;
+	GraphicsClass* m_Graphics = nullptr;
+	PositionClass* m_Position = nullptr;
 };
 
 

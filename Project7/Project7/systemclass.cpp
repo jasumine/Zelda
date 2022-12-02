@@ -57,6 +57,17 @@ bool SystemClass::Initialize()
 	{
 		return false;
 	}
+
+	// 위치 개체를 생성합니다.
+	m_Position = new PositionClass;
+	if (!m_Position)
+	{
+		return false;
+	}
+
+	return true;
+
+
 	
 	return true;
 }
@@ -64,6 +75,13 @@ bool SystemClass::Initialize()
 
 void SystemClass::Shutdown()
 {
+	// 위치 객체 반환
+	if (m_Position)
+	{
+		delete m_Position;
+		m_Position = 0;
+	}
+
 	// Release the graphics object.
 	if(m_Graphics)
 	{
@@ -138,9 +156,43 @@ bool SystemClass::Frame()
 		return false;
 	}
 
-	// Do the frame processing for the graphics object.
-	result = m_Graphics->Frame();
-	if(!result)
+	// Move
+	bool keyDown = m_Input->IsWKeyPressed();
+	m_Position->MoveUp(keyDown);
+	keyDown = m_Input->IsAKeyPressed();
+	m_Position->MoveDown(keyDown);
+	keyDown = m_Input->IsSKeyPressed();
+	m_Position->MoveLeft(keyDown);
+	keyDown = m_Input->IsDKeyPressed();
+	m_Position->MoveRight(keyDown);
+
+	// Turn
+
+	keyDown = m_Input->IsUpArrowKeyPressed();
+	m_Position->TurnUp(keyDown);
+	keyDown = m_Input->IsDownArrowKeyPressed();
+	m_Position->TurnDown(keyDown);
+	keyDown = m_Input->IsLeftArrowKeyPressed();
+	m_Position->TurnLeft(keyDown);
+	keyDown = m_Input->IsRightArrowKeyPressed();
+	m_Position->TurnRight(keyDown);
+
+	// 현재 뷰 포인트 회전을 가져옵니다.
+	float positionX = 0.0f;
+	m_Position->GetPositionX(positionX);
+
+	float positionZ = 0.0f;
+	m_Position->GetPositionZ(positionZ);
+
+	float rotationX = 0.0f;
+	m_Position->GetRotationX(rotationX);
+
+	float rotationY = 0.0f;
+	m_Position->GetRotationY(rotationY);
+
+
+// 그래픽 객체에 대한 프레임 처리를 수행합니다.
+	if (!m_Graphics->Frame(positionX, positionZ, rotationX,rotationY, m_Fps->GetFps(), m_Cpu->GetCpuPercentage()))
 	{
 		return false;
 	}
