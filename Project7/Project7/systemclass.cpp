@@ -6,8 +6,6 @@
 
 SystemClass::SystemClass()
 {
-	m_Input = 0;
-	m_Graphics = 0;
 }
 
 
@@ -23,13 +21,9 @@ SystemClass::~SystemClass()
 
 bool SystemClass::Initialize()
 {
-	int screenWidth, screenHeight;
-	bool result;
-
-
 	// Initialize the width and height of the screen to zero before sending the variables into the function.
-	screenWidth = 0;
-	screenHeight = 0;
+	int screenWidth = 0;
+	int screenHeight = 0;
 
 	// Initialize the windows api.
 	InitializeWindows(screenWidth, screenHeight);
@@ -42,7 +36,12 @@ bool SystemClass::Initialize()
 	}
 
 	// Initialize the input object.
-	m_Input->Initialize();
+	// m_Input 객체 초기화
+	if (!m_Input->Initialize(m_hinstance, m_hwnd, screenWidth, screenHeight))
+	{
+		MessageBox(m_hwnd, L"Could not initialize the input object.", L"Error", MB_OK);
+		return false;
+	}
 
 	// Create the graphics object.  This object will handle rendering all the graphics for this application.
 	m_Graphics = new GraphicsClass;
@@ -52,9 +51,43 @@ bool SystemClass::Initialize()
 	}
 
 	// Initialize the graphics object.
-	result = m_Graphics->Initialize(screenWidth, screenHeight, m_hwnd);
-	if(!result)
+	if (!m_Graphics->Initialize(screenWidth, screenHeight, m_hwnd))
 	{
+		return false;
+	}
+
+	// Create the fps object.
+	m_Fps = new FpsClass;
+	if (!m_Fps)
+	{
+		return false;
+	}
+
+	// Initialize the fps object.
+	m_Fps->Initialize();
+
+	// Create the cpu object.
+	m_Cpu = new CpuClass;
+	if (!m_Cpu)
+	{
+		return false;
+	}
+
+	// Initialize the cpu object.
+	m_Cpu->Initialize();
+
+
+	// 타이머 객체를 만듭니다.
+	m_Timer = new TimerClass;
+	if (!m_Timer)
+	{
+		return false;
+	}
+
+	// 타이머 객체를 초기화합니다.
+	if (!m_Timer->Initialize())
+	{
+		MessageBox(m_hwnd, L"Could not initialize the Timer object.", L"Error", MB_OK);
 		return false;
 	}
 
@@ -67,9 +100,6 @@ bool SystemClass::Initialize()
 
 	return true;
 
-
-	
-	return true;
 }
 
 
@@ -80,6 +110,13 @@ void SystemClass::Shutdown()
 	{
 		delete m_Position;
 		m_Position = 0;
+	}
+
+	// 타이머 객체를 해제합니다.
+	if (m_Timer)
+	{
+		delete m_Timer;
+		m_Timer = 0;
 	}
 
 	// Release the graphics object.
@@ -93,8 +130,24 @@ void SystemClass::Shutdown()
 	// Release the input object.
 	if(m_Input)
 	{
+		m_Input->Shutdown();
 		delete m_Input;
 		m_Input = 0;
+	}
+
+	// Release the cpu object.
+	if (m_Cpu)
+	{
+		m_Cpu->Shutdown();
+		delete m_Cpu;
+		m_Cpu = 0;
+	}
+
+	// Release the fps object.
+	if (m_Fps)
+	{
+		delete m_Fps;
+		m_Fps = 0;
 	}
 
 	// Shutdown the window.
@@ -105,56 +158,58 @@ void SystemClass::Shutdown()
 
 
 void SystemClass::Run()
-{
+{// 메시지 구조체 생성 및 초기화
 	MSG msg;
-	bool done, result;
-
-
-	// Initialize the message structure.
 	ZeroMemory(&msg, sizeof(MSG));
-	
-	// Loop until there is a quit message from the window or the user.
-	done = false;
-	while(!done)
+
+	// 사용자로부터 종료 메시지를 받을때까지 메시지루프를 돕니다
+	while (true)
 	{
-		// Handle the windows messages.
-		if(PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+		// 윈도우 메시지를 처리합니다
+		if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
 		{
+			// 종료 메시지를 받을 경우 메시지 루프를 탈출합니다
+			if (msg.message == WM_QUIT)
+				break;
+
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
-
-		// If windows signals to end the application then exit out.
-		if(msg.message == WM_QUIT)
-		{
-			done = true;
-		}
 		else
 		{
-			// Otherwise do the frame processing.
-			result = Frame();
-			if(!result)
+			// 그 외에는 Frame 함수를 처리합니다.
+			if (!Frame())
 			{
-				done = true;
+				MessageBox(m_hwnd, L"Frame Processing Failed", L"Error", MB_OK);
+				break;
 			}
 		}
 
+		// 사용자가 ESC키를 눌렀는지 확인 후 종료 처리함
+		if (m_Input->IsEscapePressed() == true)
+		{
+			break;
+		}
 	}
-
-	return;
 }
 
 
 bool SystemClass::Frame()
 {
-	bool result;
+	// 시스템 통계를 업데이트 합니다
+	m_Timer->Frame();
+	m_Fps->Frame();
+	m_Cpu->Frame();
 
-
-	// Check if the user pressed escape and wants to exit the application.
-	if(m_Input->IsKeyDown(VK_ESCAPE))
+	// 입력 프레임 처리를 수행합니다
+	if (!m_Input->Frame())
 	{
 		return false;
 	}
+
+	// 업데이트 된 위치를 계산하기 위한 프레임 시간을 설정합니다.
+	m_Position->SetFrameTime(m_Timer->GetTime());
+
 
 	// Move
 	bool keyDown = m_Input->IsWKeyPressed();
@@ -197,144 +252,108 @@ bool SystemClass::Frame()
 		return false;
 	}
 
-	return true;
+	return m_Graphics->Render();
 }
 
 
 LRESULT CALLBACK SystemClass::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LPARAM lparam)
 {
-	switch(umsg)
-	{
-		// Check if a key has been pressed on the keyboard.
-		case WM_KEYDOWN:
-		{
-			// If a key is pressed send it to the input object so it can record that state.
-			m_Input->KeyDown((unsigned int)wparam);
-			return 0;
-		}
-
-		// Check if a key has been released on the keyboard.
-		case WM_KEYUP:
-		{
-			// If a key is released then send it to the input object so it can unset the state for that key.
-			m_Input->KeyUp((unsigned int)wparam);
-			return 0;
-		}
-
-		// Any other messages send to the default message handler as our application won't make use of them.
-		default:
-		{
-			return DefWindowProc(hwnd, umsg, wparam, lparam);
-		}
-	}
+	return DefWindowProc(hwnd, umsg, wparam, lparam);
 }
 
 
 void SystemClass::InitializeWindows(int& screenWidth, int& screenHeight)
 {
-	WNDCLASSEX wc;
-	DEVMODE dmScreenSettings;
-	int posX, posY;
-
-
-	// Get an external pointer to this object.	
+	// 외부 포인터를 이 객체로 지정합니다
 	ApplicationHandle = this;
 
-	// Get the instance of this application.
+	// 이 프로그램의 인스턴스를 가져옵니다
 	m_hinstance = GetModuleHandle(NULL);
 
-	// Give the application a name.
-	m_applicationName = L"The Legend of Zelda: Breath of the Wild";
+	// 프로그램 이름을 지정합니다
+	m_applicationName = L"Framework";
 
-	// Setup the windows class with default settings.
-	wc.style         = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
-	wc.lpfnWndProc   = WndProc;
-	wc.cbClsExtra    = 0;
-	wc.cbWndExtra    = 0;
-	wc.hInstance     = m_hinstance;
-	wc.hIcon		 = LoadIcon(NULL, IDI_WINLOGO);
-	wc.hIconSm       = wc.hIcon;
-	wc.hCursor       = LoadCursor(NULL, IDC_ARROW);
+	// windows 클래스를 아래와 같이 설정합니다.
+	WNDCLASSEX wc;
+	wc.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
+	wc.lpfnWndProc = WndProc;
+	wc.cbClsExtra = 0;
+	wc.cbWndExtra = 0;
+	wc.hInstance = m_hinstance;
+	wc.hIcon = LoadIcon(NULL, IDI_WINLOGO);
+	wc.hIconSm = wc.hIcon;
+	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
-	wc.lpszMenuName  = NULL;
+	wc.lpszMenuName = NULL;
 	wc.lpszClassName = m_applicationName;
-	wc.cbSize        = sizeof(WNDCLASSEX);
-	
-	// Register the window class.
+	wc.cbSize = sizeof(WNDCLASSEX);
+
+	// windows class를 등록합니다
 	RegisterClassEx(&wc);
 
-	// Determine the resolution of the clients desktop screen.
-	screenWidth  = GetSystemMetrics(SM_CXSCREEN);
+	// 모니터 화면의 해상도를 읽어옵니다
+	screenWidth = GetSystemMetrics(SM_CXSCREEN);
 	screenHeight = GetSystemMetrics(SM_CYSCREEN);
 
-	// Setup the screen settings depending on whether it is running in full screen or in windowed mode.
-	if(FULL_SCREEN)
+	int posX = 0;
+	int posY = 0;
+
+	// FULL_SCREEN 변수 값에 따라 화면을 설정합니다.
+	if (FULL_SCREEN)
 	{
-		// If full screen set the screen to maximum size of the users desktop and 32bit.
+		// 풀스크린 모드로 지정했다면 모니터 화면 해상도를 데스크톱 해상도로 지정하고 색상을 32bit로 지정합니다.
+		DEVMODE dmScreenSettings;
 		memset(&dmScreenSettings, 0, sizeof(dmScreenSettings));
-		dmScreenSettings.dmSize       = sizeof(dmScreenSettings);
-		dmScreenSettings.dmPelsWidth  = (unsigned long)screenWidth;
+		dmScreenSettings.dmSize = sizeof(dmScreenSettings);
+		dmScreenSettings.dmPelsWidth = (unsigned long)screenWidth;
 		dmScreenSettings.dmPelsHeight = (unsigned long)screenHeight;
-		dmScreenSettings.dmBitsPerPel = 32;			
-		dmScreenSettings.dmFields     = DM_BITSPERPEL | DM_PELSWIDTH | DM_PELSHEIGHT;
+		dmScreenSettings.dmBitsPerPel = 32;
+		dmScreenSettings.dmFields = DM_BITSPERPEL | DM_PELSWIDTH | DM_PELSHEIGHT;
 
-		// Change the display settings to full screen.
+		// 풀스크린으로 디스플레이 설정을 변경합니다.
 		ChangeDisplaySettings(&dmScreenSettings, CDS_FULLSCREEN);
-
-		// Set the position of the window to the top left corner.
-		posX = posY = 0;
 	}
 	else
 	{
-		// If windowed then set it to 800x600 resolution.
-		screenWidth  = 1600;
+		// 윈도우 모드의 경우 1600 * 900 크기를 지정합니다.
+		screenWidth = 1600;
 		screenHeight = 900;
 
-		// Place the window in the middle of the screen.
-		posX = (GetSystemMetrics(SM_CXSCREEN) - screenWidth)  / 2;
+		// 윈도우 창을 가로, 세로의 정 가운데 오도록 합니다.
+		posX = (GetSystemMetrics(SM_CXSCREEN) - screenWidth) / 2;
 		posY = (GetSystemMetrics(SM_CYSCREEN) - screenHeight) / 2;
 	}
 
-	// Create the window with the screen settings and get the handle to it.
-	m_hwnd = CreateWindowEx(WS_EX_APPWINDOW, m_applicationName, m_applicationName, 
-						    WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP,
-						    posX, posY, screenWidth, screenHeight, NULL, NULL, m_hinstance, NULL);
+	// 윈도우를 생성하고 핸들을 구합니다.
+	m_hwnd = CreateWindowEx(WS_EX_APPWINDOW, m_applicationName, m_applicationName,
+		WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP,
+		posX, posY, screenWidth, screenHeight, NULL, NULL, m_hinstance, NULL);
 
-	// Bring the window up on the screen and set it as main focus.
+	// 윈도우를 화면에 표시하고 포커스를 지정합니다
 	ShowWindow(m_hwnd, SW_SHOW);
 	SetForegroundWindow(m_hwnd);
 	SetFocus(m_hwnd);
-
-	// Hide the mouse cursor.
-	ShowCursor(false);
-
-	return;
 }
 
 
 void SystemClass::ShutdownWindows()
 {
-	// Show the mouse cursor.
-	ShowCursor(true);
-
-	// Fix the display settings if leaving full screen mode.
-	if(FULL_SCREEN)
+	// 풀스크린 모드였다면 디스플레이 설정을 초기화합니다.
+	if (FULL_SCREEN)
 	{
 		ChangeDisplaySettings(NULL, 0);
 	}
 
-	// Remove the window.
+	// 창을 제거합니다
 	DestroyWindow(m_hwnd);
 	m_hwnd = NULL;
 
-	// Remove the application instance.
+	// 프로그램 인스턴스를 제거합니다
 	UnregisterClass(m_applicationName, m_hinstance);
 	m_hinstance = NULL;
 
-	// Release the pointer to this class.
+	// 외부포인터 참조를 초기화합니다
 	ApplicationHandle = NULL;
-
-	return;
 }
 
 

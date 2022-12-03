@@ -213,6 +213,7 @@ bool GraphicsClass::Frame(float positionX, float positionZ, float rotationX, flo
 	// 카메라의 회전을 설정합니다
 	m_Camera->SetRotation(rotationX, rotationY, 0.0f);
 
+	/*
 	// Update the rotation variable each frame.
 	rotation += XM_PI * 0.005f;
 	if (rotation > 360.0f)
@@ -226,11 +227,11 @@ bool GraphicsClass::Frame(float positionX, float positionZ, float rotationX, flo
 	{
 		return false;
 	}
-
+	*/
 	return true;
 }
 
-bool GraphicsClass::Render(float rotation)
+bool GraphicsClass::Render()
 {
 	XMMATRIX worldMatrix, viewMatrix, projectionMatrix, orthoMatrix;
 	bool result;

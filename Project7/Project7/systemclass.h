@@ -23,6 +23,9 @@
 #include "inputclass.h"
 #include "graphicsclass.h"
 #include "PositionClass.h"
+#include "TimerClass.h"
+#include "FpsClass.h"
+#include "CpuClass.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 // Class name: SystemClass
@@ -53,7 +56,10 @@ private:
 	InputClass* m_Input = nullptr;
 	GraphicsClass* m_Graphics = nullptr;
 	PositionClass* m_Position = nullptr;
-};
+	FpsClass* m_Fps = nullptr;
+	CpuClass* m_Cpu = nullptr;
+	TimerClass* m_Timer = nullptr;
+};       
 
 
 /////////////////////////

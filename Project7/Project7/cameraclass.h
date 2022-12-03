@@ -33,8 +33,7 @@ public:
 
 	void Render();
 	void GetViewMatrix(XMMATRIX&);
-	void UpdateCamera();
-	void DetectInput(double time);
+
 
 
 private:
