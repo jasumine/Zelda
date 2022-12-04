@@ -215,9 +215,9 @@ bool SystemClass::Frame()
 	bool keyDown = m_Input->IsWKeyPressed();
 	m_Position->MoveUp(keyDown);
 	keyDown = m_Input->IsAKeyPressed();
-	m_Position->MoveDown(keyDown);
-	keyDown = m_Input->IsSKeyPressed();
 	m_Position->MoveLeft(keyDown);
+	keyDown = m_Input->IsSKeyPressed();
+	m_Position->MoveDown(keyDown);
 	keyDown = m_Input->IsDKeyPressed();
 	m_Position->MoveRight(keyDown);
 

@@ -1,10 +1,4 @@
-﻿  systemclass.cpp
+﻿  graphicsclass.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Test\BOTW\Project7\Project7\stdafx.h(8,1): warning C4005: '_WIN32_WINNT': 매크로 재정의
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\sdkddkver.h(218): message : '_WIN32_WINNT'의 이전 정의를 참조하십시오.
-C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Test\BOTW\Project7\Project7\DxDefine.h(3,1): warning C4005: 'DIRECTINPUT_VERSION': 매크로 재정의
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dinput.h(48): message : 'DIRECTINPUT_VERSION'의 이전 정의를 참조하십시오.
-  TextClass.cpp
-  TimerClass.cpp
-  코드를 생성하고 있습니다...
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Test\BOTW\Project7\Project7\graphicsclass.cpp(208,7): warning C4101: 'result' :참조되지 않은 지역 변수입니다.
   Project7.vcxproj -> C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Test\BOTW\Project7\Debug\Project7.exe

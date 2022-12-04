@@ -39,7 +39,7 @@ public:
 
 	bool Initialize(ID3D11Device*, int, int, const WCHAR*, int, int);
 	void Shutdown();
-	bool Render(ID3D11DeviceContext*, int, int);
+	bool Render(ID3D11DeviceContext*, int, int, int);
 
 	int GetIndexCount();
 	ID3D11ShaderResourceView* GetTexture();
@@ -47,7 +47,7 @@ public:
 private:
 	bool InitializeBuffers(ID3D11Device*);
 	void ShutdownBuffers();
-	bool UpdateBuffers(ID3D11DeviceContext*, int, int);
+	bool UpdateBuffers(ID3D11DeviceContext*, int, int, int);
 	void RenderBuffers(ID3D11DeviceContext*);
 
 	bool LoadTexture(ID3D11Device*, const WCHAR*);
@@ -60,6 +60,7 @@ private:
 	int m_screenWidth, m_screenHeight;
 	int m_bitmapWidth, m_bitmapHeight;
 	int m_previousPosX, m_previousPosY;
+	int m_rotationY;
 };
 
 #endif

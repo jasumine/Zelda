@@ -58,7 +58,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 
 	// Set the initial position of the camera.
 	//m_Camera->SetPosition(0.0f, 0.0f, -300.0f);	// for cube
-	m_Camera->SetPosition(0.0f, 0.5f, -3.0f);	// for chair
+	m_Camera->SetPosition(0.0f, 0.5f, 0.0f);	// for chair
 		
 	// Create the model object.
 	m_Model = new ModelClass;
@@ -133,7 +133,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	}
 
 	// Initialize the bitmap object.
-	result = m_Bitmap->Initialize(m_D3D->GetDevice(), screenWidth, screenHeight, L"./data/ground.dds", 500, 500);
+	result = m_Bitmap->Initialize(m_D3D->GetDevice(), screenWidth, screenHeight, L"./data/ground.dds", 1000,1000);
 	if (!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the bitmap object.", L"Error", MB_OK);
@@ -253,7 +253,7 @@ bool GraphicsClass::Render()
 	m_D3D->TurnZBufferOff();
 
 	// Put the bitmap vertex and index buffers on the graphics pipeline to prepare them for drawing.
-	result = m_Bitmap->Render(m_D3D->GetDeviceContext(), 100, 100);
+	result = m_Bitmap->Render(m_D3D->GetDeviceContext(), 0,0, 120);
 	if (!result)
 	{
 		return false;

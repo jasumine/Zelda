@@ -49,16 +49,16 @@ void PositionClass::MoveUp(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveUpSpeed += m_frameTime * 0.01f;
+		m_moveUpSpeed += m_frameTime + 0.01f;
 
-		if (m_moveUpSpeed > (m_frameTime * 0.15f))
+		if (m_moveUpSpeed > (m_frameTime + 0.15f))
 		{
-			m_moveUpSpeed = m_frameTime * 0.15f;
+			m_moveUpSpeed = m_frameTime + 0.15f;
 		}
 	}
 	else
 	{
-		m_moveUpSpeed -= m_frameTime * 0.005f;
+		m_moveUpSpeed -= m_frameTime + 0.005f;
 
 		if (m_moveUpSpeed < 0.0f)
 		{
@@ -66,27 +66,24 @@ void PositionClass::MoveUp(bool keydown)
 		}
 	}
 
-	m_positionX += m_moveUpSpeed;
-	if (m_positionX < 0.0f)
-	{
-		m_positionX -= 360.0f;
-	}
+	m_positionZ += m_moveUpSpeed;
+
 }
 
 void PositionClass::MoveDown(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveDownSpeed += m_frameTime * 0.01f;
+		m_moveDownSpeed += m_frameTime + 0.01f;
 
-		if (m_moveDownSpeed > (m_frameTime * 0.15f))
+		if (m_moveDownSpeed > (m_frameTime + 0.15f))
 		{
-			m_moveDownSpeed = m_frameTime * 0.15f;
+			m_moveDownSpeed = m_frameTime + 0.15f;
 		}
 	}
 	else
 	{
-		m_moveDownSpeed -= m_frameTime * 0.005f;
+		m_moveDownSpeed -= m_frameTime + 0.005f;
 
 		if (m_moveDownSpeed < 0.0f)
 		{
@@ -94,67 +91,58 @@ void PositionClass::MoveDown(bool keydown)
 		}
 	}
 
-	m_positionX -= m_moveDownSpeed;
-	if (m_positionX < 0.0f)
-	{
-		m_positionX += 360.0f;
-	}
+	m_positionZ -= m_moveDownSpeed;
+
 }
 
 void PositionClass::MoveLeft(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveLeftSpeed += m_frameTime * 0.01f;
+		m_moveLeftSpeed += m_frameTime + 0.01f;
 
-		if (m_moveLeftSpeed > (m_frameTime * 0.15f))
+		if (m_moveLeftSpeed > (m_frameTime + 0.15f))
 		{
-			m_moveLeftSpeed = m_frameTime * 0.15f;
+			m_moveLeftSpeed = m_frameTime + 0.15f;
 		}
 	}
 	else
 	{
-		m_moveLeftSpeed -= m_frameTime * 0.005f;
+		m_moveLeftSpeed -= m_frameTime + 0.005f;
 
 		if (m_moveLeftSpeed < 0.0f)
 		{
-			m_moveLeftSpeed += 0.0f;
+			m_moveLeftSpeed = 0.0f;
 		}
 	}
 
-	m_positionZ -= m_moveLeftSpeed;
-	if (m_positionZ < 0.0f)
-	{
-		m_positionZ += 360.0f;
-	}
+	m_positionX += m_moveLeftSpeed;
+
 }
 
 void PositionClass::MoveRight(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveRightSpeed += m_frameTime * 0.01f;
+		m_moveRightSpeed += m_frameTime + 0.01f;
 
-		if (m_moveRightSpeed > (m_frameTime * 0.15f))
+		if (m_moveRightSpeed > (m_frameTime + 0.15f))
 		{
-			m_moveRightSpeed = m_frameTime * 0.15f;
+			m_moveRightSpeed = m_frameTime + 0.15f;
 		}
 	}
 	else
 	{
-		m_moveRightSpeed -= m_frameTime * 0.005f;
+		m_moveRightSpeed -= m_frameTime + 0.005f;
 
 		if (m_moveRightSpeed < 0.0f)
 		{
-			m_moveRightSpeed += 0.0f;
+			m_moveRightSpeed = 0.0f;
 		}
 	}
 
-	m_positionZ += m_moveRightSpeed;
-	if (m_positionZ < 0.0f)
-	{
-		m_positionZ -= 360.0f;
-	}
+	m_positionX -= m_moveRightSpeed;
+
 }
 
 // Turn

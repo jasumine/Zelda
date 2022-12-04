@@ -36,8 +36,9 @@ bool BitmapClass::Initialize(ID3D11Device* device, int screenWidth, int screenHe
 	m_bitmapHeight = bitmapHeight;
 
 	// Initialize the previous rendering position to negative one.
-	m_previousPosX = -1;
-	m_previousPosY = -1;
+	m_previousPosX = 0;
+	m_previousPosY = 0;
+	m_rotationY = 0;
 
 	// Initialize the vertex and index buffers.
 	result = InitializeBuffers(device);
@@ -69,13 +70,13 @@ void BitmapClass::Shutdown()
 }
 
 
-bool BitmapClass::Render(ID3D11DeviceContext* deviceContext, int positionX, int positionY)
+bool BitmapClass::Render(ID3D11DeviceContext* deviceContext, int positionX, int positionY, int rotationY)
 {
 	bool result;
 
 
 	// Re-build the dynamic vertex buffer for rendering to possibly a different location on the screen.
-	result = UpdateBuffers(deviceContext, positionX, positionY);
+	result = UpdateBuffers(deviceContext, positionX, positionY, rotationY);
 	if(!result)
 	{
 		return false;
@@ -210,7 +211,7 @@ void BitmapClass::ShutdownBuffers()
 }
 
 
-bool BitmapClass::UpdateBuffers(ID3D11DeviceContext* deviceContext, int positionX, int positionY)
+bool BitmapClass::UpdateBuffers(ID3D11DeviceContext* deviceContext, int positionX, int positionY, int rotationY)
 {
 	float left, right, top, bottom;
 	VertexType* vertices;
@@ -221,7 +222,7 @@ bool BitmapClass::UpdateBuffers(ID3D11DeviceContext* deviceContext, int position
 
 	// If the position we are rendering this bitmap to has not changed then don't update the vertex buffer since it
 	// currently has the correct parameters.
-	if((positionX == m_previousPosX) && (positionY == m_previousPosY))
+	if((positionX == m_previousPosX) && (positionY == m_previousPosY)&&(rotationY==m_rotationY))
 	{
 		return true;
 	}
@@ -229,6 +230,7 @@ bool BitmapClass::UpdateBuffers(ID3D11DeviceContext* deviceContext, int position
 	// If it has changed then update the position it is being rendered to.
 	m_previousPosX = positionX;
 	m_previousPosY = positionY;
+	m_rotationY = rotationY;
 
 	// Calculate the screen coordinates of the left side of the bitmap.
 	left = (float)((m_screenWidth / 2) * -1) + (float)positionX;
