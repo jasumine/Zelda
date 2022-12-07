@@ -1,4 +1,4 @@
 ﻿  graphicsclass.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Test\BOTW\Project7\Project7\graphicsclass.cpp(208,7): warning C4101: 'result' :참조되지 않은 지역 변수입니다.
+C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Test\BOTW\Project7\Project7\graphicsclass.cpp(366,7): warning C4101: 'result' :참조되지 않은 지역 변수입니다.
   Project7.vcxproj -> C:\Users\WINDOWS\Desktop\4학년 2학기\컴그실2\Zelda\Test\BOTW\Project7\Debug\Project7.exe

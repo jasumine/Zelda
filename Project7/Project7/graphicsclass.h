@@ -44,7 +44,15 @@ public:
 private:
 	D3DClass* m_D3D;
 	CameraClass* m_Camera;
-	ModelClass* m_Model;
+
+	ModelClass* m_ModelHouse;
+	ModelClass* m_ModelGround;
+	ModelClass* m_ModelTree;
+	ModelClass* m_ModelCharacter;
+	ModelClass* m_ModelTable;
+	ModelClass* m_ModelBed;
+	ModelClass* m_ModelLantern;
+	ModelClass* m_ModelLight;
 
 	LightShaderClass* m_LightShader;
 	LightClass* m_Light;

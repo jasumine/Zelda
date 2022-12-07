@@ -49,24 +49,8 @@ void PositionClass::MoveUp(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveUpSpeed += m_frameTime + 0.01f;
-
-		if (m_moveUpSpeed > (m_frameTime + 0.15f))
-		{
-			m_moveUpSpeed = m_frameTime + 0.15f;
-		}
+		m_positionZ -= 0.5f;
 	}
-	else
-	{
-		m_moveUpSpeed -= m_frameTime + 0.005f;
-
-		if (m_moveUpSpeed < 0.0f)
-		{
-			m_moveUpSpeed = 0.0f;
-		}
-	}
-
-	m_positionZ += m_moveUpSpeed;
 
 }
 
@@ -74,24 +58,8 @@ void PositionClass::MoveDown(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveDownSpeed += m_frameTime + 0.01f;
-
-		if (m_moveDownSpeed > (m_frameTime + 0.15f))
-		{
-			m_moveDownSpeed = m_frameTime + 0.15f;
-		}
+		m_positionZ += 0.5f;
 	}
-	else
-	{
-		m_moveDownSpeed -= m_frameTime + 0.005f;
-
-		if (m_moveDownSpeed < 0.0f)
-		{
-			m_moveDownSpeed = 0.0f;
-		}
-	}
-
-	m_positionZ -= m_moveDownSpeed;
 
 }
 
@@ -99,24 +67,8 @@ void PositionClass::MoveLeft(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveLeftSpeed += m_frameTime + 0.01f;
-
-		if (m_moveLeftSpeed > (m_frameTime + 0.15f))
-		{
-			m_moveLeftSpeed = m_frameTime + 0.15f;
-		}
+		m_positionX -= 0.5f;
 	}
-	else
-	{
-		m_moveLeftSpeed -= m_frameTime + 0.005f;
-
-		if (m_moveLeftSpeed < 0.0f)
-		{
-			m_moveLeftSpeed = 0.0f;
-		}
-	}
-
-	m_positionX += m_moveLeftSpeed;
 
 }
 
@@ -124,24 +76,8 @@ void PositionClass::MoveRight(bool keydown)
 {
 	if (keydown)
 	{
-		m_moveRightSpeed += m_frameTime + 0.01f;
-
-		if (m_moveRightSpeed > (m_frameTime + 0.15f))
-		{
-			m_moveRightSpeed = m_frameTime + 0.15f;
-		}
+		m_positionX += 0.5f;
 	}
-	else
-	{
-		m_moveRightSpeed -= m_frameTime + 0.005f;
-
-		if (m_moveRightSpeed < 0.0f)
-		{
-			m_moveRightSpeed = 0.0f;
-		}
-	}
-
-	m_positionX -= m_moveRightSpeed;
 
 }
 
@@ -151,11 +87,11 @@ void PositionClass::TurnUp(bool keydown)
 {
 	if (keydown)
 	{
-		m_turnUpSpeed += m_frameTime * 0.01f;
+		m_turnUpSpeed += m_frameTime * 0.005f;
 
-		if (m_turnUpSpeed > (m_frameTime * 0.15f))
+		if (m_turnUpSpeed > (m_frameTime * 0.1f))
 		{
-			m_turnUpSpeed = m_frameTime * 0.15f;
+			m_turnUpSpeed = m_frameTime * 0.1f;
 		}
 	}
 	else
@@ -179,11 +115,11 @@ void PositionClass::TurnDown(bool keydown)
 {
 	if (keydown)
 	{
-		m_turnDownSpeed += m_frameTime * 0.01f;
+		m_turnDownSpeed += m_frameTime * 0.005f;
 
-		if (m_turnDownSpeed > (m_frameTime * 0.15f))
+		if (m_turnDownSpeed > (m_frameTime * 0.1f))
 		{
-			m_turnDownSpeed = m_frameTime * 0.15f;
+			m_turnDownSpeed = m_frameTime * 0.1f;
 		}
 	}
 	else
@@ -208,11 +144,11 @@ void PositionClass::TurnLeft(bool keydown)
 	// 키를 누르면 카메라가 왼쪽으로 돌아는 속도가 증가합니다. 회전 속도를 늦추지 않으면.
 	if (keydown)
 	{
-		m_turnLeftSpeed += m_frameTime * 0.01f;
+		m_turnLeftSpeed += m_frameTime * 0.005f;
 
-		if (m_turnLeftSpeed > (m_frameTime * 0.15f))
+		if (m_turnLeftSpeed > (m_frameTime * 0.1f))
 		{
-			m_turnLeftSpeed = m_frameTime * 0.15f;
+			m_turnLeftSpeed = m_frameTime * 0.1f;
 		}
 	}
 	else
@@ -238,11 +174,11 @@ void PositionClass::TurnRight(bool keydown)
 	// 키를 누르면 카메라가 오른쪽으로 회전하는 속도가 증가합니다. 회전 속도를 늦추지 않으면.
 	if (keydown)
 	{
-		m_turnRightSpeed += m_frameTime * 0.01f;
+		m_turnRightSpeed += m_frameTime * 0.005f;
 
-		if (m_turnRightSpeed > (m_frameTime * 0.15f))
+		if (m_turnRightSpeed > (m_frameTime * 0.1f))
 		{
-			m_turnRightSpeed = m_frameTime * 0.15f;
+			m_turnRightSpeed = m_frameTime * 0.1f;
 		}
 	}
 	else
