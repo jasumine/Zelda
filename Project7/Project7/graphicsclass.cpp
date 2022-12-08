@@ -77,10 +77,10 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	}
 
 	// Initialize the model object.
-	 result = m_ModelHouse->Initialize(m_D3D->GetDevice(), L"./data/house2.obj", L"./data/seafloor.dds");
+	 result = m_ModelHouse->Initialize(m_D3D->GetDevice(), L"./data/house2.obj", L"./data/table.dds");
 	if (!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK);
+		MessageBox(hwnd, L"Could not initialize the model house object.", L"Error", MB_OK);
 		return false;
 	}
 	
@@ -105,10 +105,10 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 		return false;
 	}
 
-	result = m_ModelTree->Initialize(m_D3D->GetDevice(), L"./data/tree2.obj", L"./data/ground.dds");
+	result = m_ModelTree->Initialize(m_D3D->GetDevice(), L"./data/tree2.obj", L"./data/grass.dds");
 	if (!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the model ground object.", L"Error", MB_OK);
+		MessageBox(hwnd, L"Could not initialize the model tree object.", L"Error", MB_OK);
 		return false;
 	}
 
@@ -122,7 +122,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	result = m_ModelCharacter->Initialize(m_D3D->GetDevice(), L"./data/link.obj", L"./data/link.dds");
 	if (!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the model ground object.", L"Error", MB_OK);
+		MessageBox(hwnd, L"Could not initialize the model character object.", L"Error", MB_OK);
 		return false;
 	}
 
@@ -136,7 +136,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	result = m_ModelTable->Initialize(m_D3D->GetDevice(), L"./data/table.obj", L"./data/table.dds");
 	if (!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the model ground object.", L"Error", MB_OK);
+		MessageBox(hwnd, L"Could not initialize the model table object.", L"Error", MB_OK);
 		return false;
 	}
 	/*
@@ -165,7 +165,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	result = m_ModelLantern->Initialize(m_D3D->GetDevice(), L"./data/lantern.obj", L"./data/lantern.dds");
 	if (!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the model ground object.", L"Error", MB_OK);
+		MessageBox(hwnd, L"Could not initialize the model lantern object.", L"Error", MB_OK);
 		return false;
 	}
 
@@ -179,7 +179,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	result = m_ModelLight->Initialize(m_D3D->GetDevice(), L"./data/light.obj", L"./data/light.dds");
 	if (!result)
 	{
-		MessageBox(hwnd, L"Could not initialize the model ground object.", L"Error", MB_OK);
+		MessageBox(hwnd, L"Could not initialize the model light object.", L"Error", MB_OK);
 		return false;
 	}
 
@@ -233,7 +233,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 		return false;
 	}
 
-	/*
+	
 	// Create the bitmap object.
 	m_Bitmap = new BitmapClass;
 	if (!m_Bitmap)
@@ -242,13 +242,13 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	}
 
 	// Initialize the bitmap object.
-	result = m_Bitmap->Initialize(m_D3D->GetDevice(), screenWidth, screenHeight, L"./data/ground.dds", 1000,1000);
+	result = m_Bitmap->Initialize(m_D3D->GetDevice(), screenWidth, screenHeight, L"./data/cloud.dds", 2000,2000);
 	if (!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the bitmap object.", L"Error", MB_OK);
 		return false;
 	}
-	*/
+	
 	return true;
 }
 
@@ -366,7 +366,7 @@ bool GraphicsClass::Frame(float positionX, float positionZ, float rotationX, flo
 	bool result;
 
 	// 카메라 위치 설정
-	m_Camera->SetPosition(positionX, 0.0f, -positionZ);
+	m_Camera->SetPosition(positionX, 23.0f, -positionZ);
 
 	// 카메라의 회전을 설정합니다
 	m_Camera->SetRotation(rotationX, rotationY, 0.0f);
@@ -409,9 +409,9 @@ bool GraphicsClass::Render()
 
 	// Turn off the Z buffer to begin all 2D rendering.
 	m_D3D->TurnZBufferOff();
-	/*
+	
 	// Put the bitmap vertex and index buffers on the graphics pipeline to prepare them for drawing.
-	result = m_Bitmap->Render(m_D3D->GetDeviceContext(), 0,0, 120);
+	result = m_Bitmap->Render(m_D3D->GetDeviceContext(), 200,-100);
 	if (!result)
 	{
 		return false;
@@ -423,7 +423,7 @@ bool GraphicsClass::Render()
 	{
 		return false;
 	}
-	*/
+	
 	// Turn the Z buffer back on now that all 2D rendering has completed.
 	m_D3D->TurnZBufferOn();
 
@@ -463,7 +463,7 @@ bool GraphicsClass::Render()
 	XMMATRIX worldMatrix_Tree;
 	worldMatrix_Tree = XMMatrixIdentity();
 	worldMatrix_Tree *= XMMatrixScaling(20, 20, 20);
-	worldMatrix_Tree *= XMMatrixTranslation(-50, 0, 0);
+	worldMatrix_Tree *= XMMatrixTranslation(-70, 0, 0);
 	m_ModelTree->Render(m_D3D->GetDeviceContext());
 
 	// Render the model using the light shader.
@@ -478,7 +478,7 @@ bool GraphicsClass::Render()
 	XMMATRIX worldMatrix_Character;
 	worldMatrix_Character = XMMatrixIdentity();
 	worldMatrix_Character *= XMMatrixScaling(0.0012f, 0.0012f, 0.0012f);
-	worldMatrix_Character *= XMMatrixTranslation(0, 0, -50);
+	worldMatrix_Character *= XMMatrixTranslation(0, -1.0f, -50.0f);
 
 	m_ModelCharacter->Render(m_D3D->GetDeviceContext());
 
@@ -494,7 +494,7 @@ bool GraphicsClass::Render()
 	XMMATRIX worldMatrix_Table;
 	worldMatrix_Table = XMMatrixIdentity();
 	worldMatrix_Table *= XMMatrixScaling(15, 15, 15);
-	worldMatrix_Table *= XMMatrixTranslation(-10.0f, -1.0f, 0.0f);
+	worldMatrix_Table *= XMMatrixTranslation(-10.0f, 7.0f, 0.0f);
 
 	m_ModelTable->Render(m_D3D->GetDeviceContext());
 
@@ -529,7 +529,7 @@ bool GraphicsClass::Render()
 	XMMATRIX worldMatrix_Lantern;
 	worldMatrix_Lantern = XMMatrixIdentity();
 	// worldMatrix_Lantern *= XMMatrixScaling(30.0f, 30.0f, 30.0f);
-	worldMatrix_Lantern *= XMMatrixTranslation(0, 10.0f, 0);
+	worldMatrix_Lantern *= XMMatrixTranslation(0, 18.0f, 0);
 
 	m_ModelLantern->Render(m_D3D->GetDeviceContext());
 
@@ -545,7 +545,7 @@ bool GraphicsClass::Render()
 	XMMATRIX worldMatrix_Light;
 	worldMatrix_Light = XMMatrixIdentity();
 	 worldMatrix_Light *= XMMatrixScaling(10.0f, 10.0f, 10.0f);
-	worldMatrix_Light *= XMMatrixTranslation(0, 50.0f, 0);
+	worldMatrix_Light *= XMMatrixTranslation(+30.f, 70.0f, 0);
 
 	
 	m_ModelLight->Render(m_D3D->GetDeviceContext());
