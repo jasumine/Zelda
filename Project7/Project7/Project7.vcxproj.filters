@@ -143,6 +143,9 @@
     <ClInclude Include="TextClass.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="fogshaderclass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="data\chair_d.dds">
@@ -178,6 +181,12 @@
       <Filter>리소스 파일</Filter>
     </None>
     <None Include="data\texture.vs">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="fog.vs">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="fog.ps">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
